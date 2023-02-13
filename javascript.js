@@ -86,3 +86,37 @@ console.log(other);
 */
 
 // 클래스 문법
+/* (구)프로토타입 문법
+function shape(x, y) {
+    this.name = 'shape';
+    this.move(x, y);
+}
+
+shape.prototype = {
+    move: function (x, y) {
+        this.x = x;
+        this.y = y;
+    },
+    area: function (z) {
+        this.z = z;
+        return z + 2;
+    }
+};
+
+const s = new shape(0, 0);
+
+function circle(x, y, radius) {
+    shape.call(this, x, y)
+    this.name = 'circle';
+    this.radius = radius;
+}
+
+Object.assign(circle.prototype, shape.prototype, {
+    area: function () {
+        return this.radius * this.radius;
+    }
+});
+
+const c = new circle(0, 0, 20)
+*/
+console.log(c.area());
