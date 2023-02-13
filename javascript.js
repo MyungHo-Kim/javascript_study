@@ -55,6 +55,7 @@ function func(...args) {
 */
 
 // 전개 연산자 (객체)
+/*
 const objectOne = {
     one: 1,
     two: 2,
@@ -82,3 +83,6 @@ combined = {
 const { other, ...others } = combined;
 
 console.log(other);
+*/
+
+// 클래스 문법
